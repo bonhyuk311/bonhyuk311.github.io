@@ -3,20 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>포트폴리오 요구사항 정의</title>
+  <title>구본혁 포트폴리오 요구사항 정의</title>
   <link href="https://fonts.googleapis.com/css2?family=Pretendard&display=swap" rel="stylesheet">
   <style>
-    * {
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; }
     body {
       margin: 0;
       font-family: 'Pretendard', sans-serif;
       background: linear-gradient(135deg, #f0f4ff, #ffffff);
       color: #333;
-      padding: 0;
     }
-
     header {
       background: #2d3e50;
       padding: 20px 40px;
@@ -24,199 +20,98 @@
       text-align: center;
       box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     }
-
-    h1 {
-      margin: 0;
-      font-size: 2rem;
-    }
-
+    h1 { margin: 0; font-size: 2rem; }
     main {
       max-width: 900px;
       margin: 40px auto;
       padding: 0 20px;
     }
-
     section {
       background: white;
       margin-bottom: 30px;
       border-radius: 16px;
       padding: 30px;
       box-shadow: 0 6px 20px rgba(0,0,0,0.05);
-      transition: all 0.3s;
     }
-
-    section:hover {
-      transform: translateY(-2px);
-    }
-
     h2 {
       font-size: 1.3rem;
       color: #2c3e50;
       margin-top: 0;
     }
-
-    ul {
-      padding-left: 20px;
-    }
-
-    label {
-      display: block;
-      font-weight: 600;
-      margin-top: 20px;
-      color: #333;
-    }
-
-    textarea, input[type="text"] {
-      width: 100%;
-      padding: 12px;
-      margin-top: 6px;
-      border: 1px solid #ccc;
-      border-radius: 10px;
-      font-size: 1rem;
-      background-color: #f9f9f9;
-    }
-
-    .checkbox-group {
-      margin-top: 10px;
-    }
-
-    .checkbox-group label {
-      display: block;
-      font-weight: normal;
-      margin-bottom: 6px;
-    }
-
-    button {
-      margin-top: 30px;
-      padding: 14px 28px;
-      background: #4c8ef7;
-      color: white;
-      border: none;
-      border-radius: 8px;
-      font-size: 1rem;
-      cursor: pointer;
-      transition: background 0.3s;
-    }
-
-    button:hover {
-      background: #3a74d3;
-    }
-
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 1.5rem;
-      }
-
-      section {
-        padding: 20px;
-      }
-    }
+    ul { padding-left: 20px; }
+    p, li { line-height: 1.6; }
   </style>
 </head>
 <body>
 
-  <header>
-    <h1>📄 포트폴리오 요구사항 정의서</h1>
-  </header>
+<header>
+  <h1>📄 구본혁 포트폴리오 요구사항 정의서</h1>
+</header>
 
-  <main>
+<main>
 
-    <section>
-      <h2>1. 프로젝트 개요</h2>
-      <p><strong>프로젝트 명:</strong> 개인 포트폴리오 웹사이트 제작</p>
-      <p><strong>목적:</strong> 이력, 기술, 프로젝트 등을 정리해 채용·의뢰에 활용</p>
-      <p><strong>형태:</strong> 반응형 정적 웹사이트</p>
-    </section>
+  <section>
+    <h2>1. 프로젝트 개요</h2>
+    <p><strong>프로젝트 명:</strong> 구본혁 개인 포트폴리오 웹사이트</p>
+    <p><strong>목적:</strong> 구직 활동 및 프리랜서 의뢰를 위한 전문적인 온라인 프로필 제공</p>
+    <p><strong>형태:</strong> 반응형 정적 웹사이트 (SPA 기반)</p>
+  </section>
 
-    <section>
-      <h2>2. 주요 이해관계자 및 사용자</h2>
-      <ul>
-        <li><strong>이해관계자:</strong> 개발자 본인, 디자이너</li>
-        <li><strong>사용자:</strong> 채용 담당자, 클라이언트, 블로그 독자</li>
-      </ul>
-    </section>
+  <section>
+    <h2>2. 주요 이해관계자 및 사용자</h2>
+    <ul>
+      <li><strong>이해관계자:</strong> 구본혁 (개발자), 디자인 멘토</li>
+      <li><strong>사용자:</strong> IT 기업 인사 담당자, 외주 클라이언트, 기술 커뮤니티 회원</li>
+    </ul>
+  </section>
 
-    <section>
-      <h2>3. 기능 명세서</h2>
-      <ul>
-        <li>자기소개</li>
-        <li>이력 및 경력</li>
-        <li>기술 스택 소개</li>
-        <li>프로젝트 목록 및 상세</li>
-        <li>연락 폼</li>
-        <li>소셜 링크</li>
-        <li>블로그 (옵션)</li>
-        <li>다크모드 전환</li>
-      </ul>
-    </section>
+  <section>
+    <h2>3. 기능 명세서</h2>
+    <ul>
+      <li>홈 화면 (소개 + 사진 + 문구)</li>
+      <li>자기소개 및 경력 요약</li>
+      <li>기술 스택 섹션</li>
+      <li>프로젝트 상세 소개 (이미지 + 설명 + 링크)</li>
+      <li>연락하기 섹션 (폼 제출 또는 이메일)</li>
+      <li>블로그 연동 (기술 글)</li>
+      <li>소셜 미디어 링크 (GitHub, LinkedIn)</li>
+      <li>다크모드 / 라이트모드 전환</li>
+    </ul>
+  </section>
 
-    <section>
-      <h2>4. 비기능 요구사항</h2>
-      <ul>
-        <li>빠른 로딩</li>
-        <li>스팸 방지</li>
-        <li>모바일 최적화</li>
-        <li>유지보수 용이성</li>
-        <li>브라우저 호환</li>
-      </ul>
-    </section>
+  <section>
+    <h2>4. 비기능 요구사항</h2>
+    <ul>
+      <li>모든 디바이스에서의 반응형 레이아웃</li>
+      <li>로딩 속도 최적화 (Lighthouse 점수 90+)</li>
+      <li>크로스 브라우저 호환성 (Chrome, Safari, Edge)</li>
+      <li>스팸 방지를 위한 이메일 캡차 적용</li>
+      <li>쉬운 유지보수와 버전 관리</li>
+    </ul>
+  </section>
 
-    <section>
-      <h2>5. 시스템 범위</h2>
-      <p><strong>포함:</strong> 정적 웹 개발, 배포, 기본 UI 디자인</p>
-      <p><strong>제외:</strong> 인증 시스템, 서버사이드 처리</p>
-    </section>
+  <section>
+    <h2>5. 시스템 범위</h2>
+    <p><strong>포함:</strong> 클라이언트 사이드 개발, 정적 호스팅, UI 디자인 구현</p>
+    <p><strong>제외:</strong> 회원가입/로그인 기능, 데이터베이스 연동</p>
+  </section>
 
-    <section>
-      <h2>6. 기술 스택 정의</h2>
-      <ul>
-        <li>HTML, CSS, JavaScript 또는 React</li>
-        <li>디자인: Figma, TailwindCSS</li>
-        <li>배포: GitHub Pages, Netlify</li>
-        <li>버전관리: Git</li>
-      </ul>
-    </section>
+  <section>
+    <h2>6. 기술 스택 정의</h2>
+    <ul>
+      <li><strong>프론트엔드:</strong> React, HTML5, CSS3, JavaScript</li>
+      <li><strong>스타일링:</strong> Tailwind CSS, Framer Motion</li>
+      <li><strong>디자인 도구:</strong> Figma</li>
+      <li><strong>배포:</strong> GitHub Pages</li>
+      <li><strong>버전 관리:</strong> Git, GitHub</li>
+    </ul>
+  </section>
 
-    <section>
-      <h2>7. 프로젝트 목표 요약</h2>
-      <p>사용자 친화적, 반응형, 심미적 완성도를 갖춘 포트폴리오 사이트 구축</p>
-    </section>
+  <section>
+    <h2>7. 프로젝트 목표 요약</h2>
+    <p>감각적인 디자인과 직관적인 UI를 기반으로, 구직 및 외주 의뢰 시 활용 가능한 신뢰도 높은 개인 포트폴리오 웹사이트를 구축하는 것. 빠른 로딩과 모바일 친화성, 관리 편의성을 갖춘 웹사이트로 구현함.</p>
+  </section>
 
-    <section>
-      <h2>📌 요구사항 입력 폼</h2>
-      <form>
-        <label for="purpose">1. 홈페이지의 목적</label>
-        <textarea id="purpose" rows="2" placeholder="예: 구직용, 프리랜서 홍보 등"></textarea>
-
-        <label for="target">2. 주 대상 사용자</label>
-        <textarea id="target" rows="2" placeholder="예: 채용 담당자, 프로젝트 의뢰인 등"></textarea>
-
-        <label>3. 포함할 기능</label>
-        <div class="checkbox-group">
-          <label><input type="checkbox"> 자기소개</label>
-          <label><input type="checkbox"> 이력 및 경력</label>
-          <label><input type="checkbox"> 기술 스택</label>
-          <label><input type="checkbox"> 프로젝트 소개</label>
-          <label><input type="checkbox"> 블로그</label>
-          <label><input type="checkbox"> 연락 폼</label>
-          <label><input type="checkbox"> 소셜 링크</label>
-          <label><input type="checkbox"> 다크모드</label>
-        </div>
-        <input type="text" placeholder="추가 기능 입력">
-
-        <label for="style">4. 디자인 스타일</label>
-        <textarea id="style" rows="2" placeholder="예: 모던, 감성적, 미니멀 등"></textarea>
-
-        <label for="stack">5. 기술 스택 선호</label>
-        <textarea id="stack" rows="2" placeholder="예: React, Next.js, Tailwind 등"></textarea>
-
-        <label for="hosting">6. 도메인 / 호스팅</label>
-        <textarea id="hosting" rows="2" placeholder="예: 보유 도메인, GitHub Pages 등"></textarea>
-
-        <button type="submit">제출</button>
-      </form>
-    </section>
-
-  </main>
+</main>
 </body>
 </html>
